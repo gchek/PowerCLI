@@ -1,7 +1,7 @@
 ﻿
 $RefreshToken   = "62c26d4a-xxxx-xxxx-xxxx-913873b1dfe0"
-$OrgName        = "VMC-SET-EMEA"
-$SDDCName       = "GC-API-SDDC"
+$OrgName        = "YOUR ORG NAME"
+$SDDCName       = "YOUR SDDC NAME"
 
 
 Import-Module ./VMware.VMC.NSXT.psd1
