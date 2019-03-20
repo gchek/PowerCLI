@@ -1,5 +1,5 @@
 ﻿
-$RefreshToken   = "62c26d4a-6794-4ead-ad4c-913873b1dfe0"
+$RefreshToken   = "62c26d4a-xxxx-xxxx-xxxx-913873b1dfe0"
 $OrgName        = "VMC-SET-EMEA"
 $SDDCName       = "GC-API-SDDC"
 
