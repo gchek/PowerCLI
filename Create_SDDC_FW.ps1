@@ -26,7 +26,7 @@ New-NSXTGroup -GatewayType CGW -Name VPC3 -IPAddress @("172.203.0.0/16")
 
 
 # Create MGW vCenter inbound rule
-New-NSXTFirewall -GatewayType MGW -Name "vCenter Inbound" -SourceGroup @("ANY") -DestinationGroup @("VCENTER") -Service @("HTTPS","ICMP-ALL","SSO") -Logged $false -SequenceNumber 0 -Action ALLOW 
+New-NSXTFirewall -GatewayType MGW -Name "vCenter Inbound" -SourceGroup @("ANY") -DestinationGroup @("VCENTER") -Service @("HTTPS","ICMP ALL","SSO") -Logged $false -SequenceNumber 0 -Action ALLOW 
 
 # Create CGW rules
 New-NSXTFirewall -GatewayType CGW -Name "vmc2aws" -SourceGroup @("ANY") -DestinationInfraGroup @("Connected VPC Prefixes", "S3 prefixes") -Service @("ANY") -Logged $false -SequenceNumber 0 -Action ALLOW -InfraScope @("VPC Interface")
