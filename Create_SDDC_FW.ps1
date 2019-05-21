@@ -33,6 +33,6 @@ New-NSXTFirewall -GatewayType CGW -Name "vmc2aws" -SourceGroup @("ANY") -Destina
 New-NSXTFirewall -GatewayType CGW -Name "aws2vmc" -SourceInfraGroup @("Connected VPC Prefixes", "S3 prefixes") -DestinationGroup @("ANY") -Service @("ANY") -Logged $false -SequenceNumber 1 -Action ALLOW -InfraScope @("VPC Interface")
 New-NSXTFirewall -GatewayType CGW -Name "Internet-out" -SourceGroup LS1 -DestinationGroup @("ANY") -Service ANY -Logged $false -SequenceNumber 2 -Action ALLOW -InfraScope "Internet Interface"
 
-# List the user firewall Rules 
+# List the user firewall Rules
 Get-NSXTFirewall -GatewayType MGW
 Get-NSXTFirewall -GatewayType CGW
